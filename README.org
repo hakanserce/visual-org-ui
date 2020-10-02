@@ -1,5 +1,5 @@
 #+TITLE: Readme
-#+OPTIONS: todo:t
+#+OPTIONS: todo:t num:t
 
 
 This is the web ui for [[https://github.com/hakanserce/visual-org-mode][visual-org-mode]]. This project relies on [[https://github.com/mindmup/mapjs][mindmup/mapjs]] project for the mind map canvas.
