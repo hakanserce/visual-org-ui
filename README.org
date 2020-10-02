@@ -1,0 +1,35 @@
+#+TITLE: Readme
+
+
+This is the web ui for [[https://github.com/hakanserce/visual-org-mode][visual-org-mode]].
+
+NOTE: This project is in its very early stages, and not ready for general consumption yet.
+
+* TODO Installation
+
+* TODO Usage
+
+* TODO Planned Work
+
+** TODO Initial MindMup.js prototype
+
+** TODO Integration with visaul-org-api
+
+** TODO Minimal set of features for the first version
+
+*** TODO Read and display the current contents
+
+*** TODO Real-time update via the API calls
+
+*** TODO Use Emacs keybindings
+
+**** TODO Default (P0)
+
+**** TODO Currently used on the Emacs via API (P1)
+
+*** TODO Create new node at the same level
+
+*** TODO Move the node up/down (ordering within parent)
+
+*** TODO Move the note left/right with all sub-nodes (indent, deindent)
+*** TODO Move the note left/right without touching sub-nodes (indent, deindent)
