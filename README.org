@@ -1,4 +1,5 @@
 #+TITLE: Readme
+#+OPTIONS: todo:t
 
 
 This is the web ui for [[https://github.com/hakanserce/visual-org-mode][visual-org-mode]]. This project relies on [[https://github.com/mindmup/mapjs][mindmup/mapjs]] project for the mind map canvas.
@@ -15,6 +16,9 @@ This comes with visual-org-mode, you don't need to separately install this.
 
 ** TODO Initial MindMup.js prototype
 
+*** DONE Copy [[https://github.com/mindmup/mapjs-webpack-example][webpack-example]] as a starting poing
+
+*** TODO Start with an empty mindmup
 
 ** TODO Integration with visual-org-api
 
