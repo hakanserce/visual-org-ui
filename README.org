@@ -1,11 +1,13 @@
 #+TITLE: Readme
 
 
-This is the web ui for [[https://github.com/hakanserce/visual-org-mode][visual-org-mode]].
+This is the web ui for [[https://github.com/hakanserce/visual-org-mode][visual-org-mode]]. This project relies on [[https://github.com/mindmup/mapjs][mindmup/mapjs]] project for the mind map canvas.
+
 
 NOTE: This project is in its very early stages, and not ready for general consumption yet.
 
 * TODO Installation
+This comes with visual-org-mode, you don't need to separately install this.
 
 * TODO Usage
 
@@ -13,7 +15,8 @@ NOTE: This project is in its very early stages, and not ready for general consum
 
 ** TODO Initial MindMup.js prototype
 
-** TODO Integration with visaul-org-api
+
+** TODO Integration with visual-org-api
 
 ** TODO Minimal set of features for the first version
 
@@ -33,3 +36,6 @@ NOTE: This project is in its very early stages, and not ready for general consum
 
 *** TODO Move the note left/right with all sub-nodes (indent, deindent)
 *** TODO Move the note left/right without touching sub-nodes (indent, deindent)
+* TODO How to build (for Developers)
+1. run ~npm install~
+2. run ~npm run pack-js~
