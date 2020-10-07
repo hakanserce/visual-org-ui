@@ -1,0 +1,27 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 0,
+      "title": "<Document Title>",
+      "ideas":{
+      }
+    }
+  },
+  "attr": {},
+  "title": "text options",
+  "links": [
+    {
+      "ideaIdFrom": 22,
+      "ideaIdTo": 5,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "solid",
+          "arrow": true
+        }
+      }
+    }
+  ]
+}
