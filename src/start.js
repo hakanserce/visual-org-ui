@@ -21,8 +21,18 @@ const MAPJS = require('mindmup-mapjs'),
 
 		  jQuery('body').keypress(function(event){
 			  if (event.ctrlKey == true && event.which == 13) {
-				  mapModel.addSubIdea();
-			  } else if (event.ctrlKey == true && event.which == 37) { // left arrow
+					var currentId = mapModel.getCurrentlySelectedIdeaId();
+					if (idea.isRootNode(currentId)) {
+						window.alert('adding to root');
+						mapModel.addSubIdea();
+					} else {
+						var parent = idea.findParent(currentId).id
+						window.alert('adding to non-root, parent:' + parent);
+						window.alert('curent id: ' + currentId);
+						mapModel.addSubIdea(parent);
+						mapModel.addSubIdea(currentId, "sub to current");
+					}
+				} else if (event.ctrlKey == true && event.which == 37) { // left arrow
 				  mapModel.moveLeft();
 			  } else if (event.ctrlKey == true && event.which == 39) { // right arrow
 				  mapModel.moveRight();
