@@ -20,7 +20,7 @@ This comes with visual-org-mode, you don't need to separately install this.
 
 *** DONE Start with an empty mindmup, with a single root element
 
-*** TODO Add to same level with C+RET
+*** DONE Add to same level with C+RET
 
 *** TODO Add text when typed
 
