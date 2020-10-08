@@ -54,5 +54,5 @@ This comes with visual-org-mode, you don't need to separately install this.
 *** TODO Toggle heading outline state (collapsed, expanded, etc)
 *** TODO Toggle overall outline state (collapsed, expanded, etc)
 * TODO How to build (for Developers)
-1. run ~npm install~
-2. run ~npm run pack-js~
+1. run ~npm ci~
+2. run ~npm build~

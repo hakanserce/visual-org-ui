@@ -1,3 +1,5 @@
+import "./static/css/mapjs-default-styles.css"
+
 /*global require, document, window, console */
 const MAPJS = require('mindmup-mapjs'),
 	  jQuery = require('jquery'),

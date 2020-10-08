@@ -76,7 +76,6 @@
 	display: inline-block;
 }
 .mapjs-hyperlink {
-	background-image: url(icon-link-inactive.svg);
 	width: 32px;
 	height: 32px;
 	background-size: 32px 32px;
@@ -84,10 +83,8 @@
 	display: inline-block;
 }
 .mapjs-hyperlink:hover {
-	background-image:url(icon-link-active.svg);
 }
 .mapjs-attachment {
-	background-image: url(icon-paperclip-inactive.svg);
 	width: 16px;
 	height: 32px;
 	background-size: 16px 32px;
@@ -95,7 +92,6 @@
 	display: inline-block;
 }
 .mapjs-attachment:hover{
-	background-image:url(icon-paperclip-active.svg);
 
 }
 .mapjs-draw-container {
@@ -125,7 +121,6 @@
 }
 .mapjs-reorder-bounds {
 	z-index: 999;
-	background-image:url(chevron-left.svg);
 	width: 11px;
 	background-height: 100%;
 	background-width: 100%;
@@ -133,7 +128,6 @@
 	background-repeat: no-repeat;
 }
 .mapjs-reorder-bounds[mapjs-edge="left"] {
-	background-image:url(chevron-right.svg);
 }
 .mapjs-reorder-bounds[mapjs-edge="top"] {
 	transform: rotate(-90deg);
