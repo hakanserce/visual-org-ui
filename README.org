@@ -53,6 +53,9 @@ This comes with visual-org-mode, you don't need to separately install this.
 *** TODO Remove heading
 *** TODO Toggle heading outline state (collapsed, expanded, etc)
 *** TODO Toggle overall outline state (collapsed, expanded, etc)
-* TODO How to build (for Developers)
+* DONE How to build (for Developers)
 1. run ~npm ci~
-2. run ~npm build~
+2. run ~npm run build~
+** How to run dev-server for testing
+1. run ~npm run start~
+2. go to ~localhost:8000~ in your browser
