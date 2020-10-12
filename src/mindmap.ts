@@ -4,7 +4,6 @@ import * as themeProvider from './theme'
 import {ThemeProcessor} from 'mindmup-mapjs-layout'
 import {content} from 'mindmup-mapjs-model'
 
-
 declare global {
     interface Window {
         mapModel: any
@@ -30,13 +29,16 @@ export interface MindMapNode {
     readonly isRoot: boolean
     readonly parent: MindMapNode
     addSubNode(): void
+    addSiblingNode(): void
+    promote(): void
+    demote(): void
 }
 
 const SOURCE = 'visal-org-ui'
 
 class MindMupMindMapImpl implements MindMap {
-    private mapModel: any
-    private idea: any
+    private mapModel: MAPJS.MapModel
+    private idea: MAPJS.Idea
 
     constructor() {
         let container = $('#container')
@@ -63,12 +65,12 @@ class MindMupMindMapImpl implements MindMap {
 class MindMupMindMapNodeImpl implements MindMapNode {
     readonly mindMap: MindMupMindMapImpl
 
-    private nodeId: any
-    private idea: any
-    private mapModel: any
+    private nodeId: MAPJS.Id
+    private idea: MAPJS.Idea
+    private mapModel: MAPJS.MapModel
 
 
-    constructor(mindMap: MindMupMindMapImpl, idea: any, mapModel: any, nodeId: any) {
+    constructor(mindMap: MindMupMindMapImpl, idea: MAPJS.Idea, mapModel: MAPJS.MapModel, nodeId: MAPJS.Id) {
         this.mindMap = mindMap
         this.idea = idea
         this.mapModel = mapModel
@@ -77,6 +79,22 @@ class MindMupMindMapNodeImpl implements MindMapNode {
 
     addSubNode(): void {
        this.mapModel.addSubIdea(SOURCE, this.nodeId);
+    }
+
+    addSiblingNode(): void {
+        if (this.isRoot) {
+            this.addSubNode()
+        } else {
+            this.parent.addSubNode()
+        }
+    }
+
+    promote(): void {
+        this.mapModel.moveLeft(SOURCE)
+    }
+
+    demote(): void {
+        this.mapModel.moveRight(SOURCE)
     }
 
     get isRoot(): boolean {

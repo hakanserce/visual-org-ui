@@ -10,18 +10,13 @@ let init = function () {
 
 
 	$('body').keypress(function(event: any){
+		let currentNode = mindMap.currentNode
 		if (event.ctrlKey == true && event.which == 13) { // return
-			let currentNode = mindMap.currentNode
-			if (currentNode.isRoot) {
-				currentNode.addSubNode()
-			} else {
-				let parent = currentNode.parent
-				parent.addSubNode()
-			}
+			currentNode.addSiblingNode()
 		} else if (event.ctrlKey == true && event.which == 37) { // left arrow
-			//TODO move to parent
+			currentNode.promote()
 		} else if (event.ctrlKey == true && event.which == 39) { // right arrow
-			//TODO move to previous siblings childs
+			currentNode.demote()
 		}
 	})
 
